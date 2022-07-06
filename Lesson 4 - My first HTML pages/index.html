@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Travel Website</title>
+        <style>
+            body, p, h1, h2{
+                margin: 0;
+            }
+            .clear-fix{
+                clear: both;
+            }
+            .header{
+                background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.6)) , url(images/travel-main.jpg);
+                background-position: center;
+                background-color: black;
+                background-size: cover;
+                height: 500px;
+            }
+            .nav{
+                margin: 0px 20px;
+            }
+            .left-nav{
+                float: left;
+                color:  #58E970;
+                font-size: 30pt;
+                width: 10%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-top: 5px;
+            }
+            .right-nav{
+                float: right;
+                width: 35%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .right-nav ul{
+                list-style-type: none;
+            }
+            .right-nav ul li{
+                display: inline-block;
+                padding-right: 25px;
+            }
+            .right-nav ul li:last-child{
+                padding-right: 10px;
+            }
+            .right-nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 8pt;
+            }
+            .header-items{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 150px;
+            }
+            .header-items h1{
+                color:white;
+                font-size: 30pt;
+            }
+            .header-items h2{
+                color:#58E970;
+                font-size: 23pt;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            .btn-transparent{
+                border: 2px solid #58E970;
+                padding: 15px 40px;
+                font-weight: 600;
+                background: transparent;
+                color: #58E970;
+                font-size: 9pt;
+                margin-top: 15px;
+            }
+            .btn-green{
+                border: 2px solid #58E970;
+                padding: 10px 40px;
+                font-weight: 600;
+                border-radius: 20px;
+                background: #58E970;;
+                color: white;
+                font-size: 9pt;
+            }
+            .section-wu{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 400px;
+            }
+            .section-wu-header{
+                margin-top: 50px;
+            } 
+            .section-wu-header h2{
+                font-size: 20pt;
+                font-weight: 100;
+            } 
+            .section-wu-header p{
+                font-size: 8pt;
+                color: #58E970;
+            } 
+            .section-wu-main{
+                margin: 5% 20% auto;
+                text-align: center;
+                height: 300px;
+            }
+            .section-wu-main-item-1, .section-wu-main-item-2 {
+                width: 24%;
+                height: 200px;
+                box-shadow: 10px 5px 10px 5px#888888;
+                float: left;
+                margin-right: 125px;
+                padding-top: 35px;
+            }
+            .section-wu-main-item-1 p, .section-wu-main-item-2 p, .section-wu-main-item-3 p{
+                padding-top: 35px;
+            }
+            .section-wu-main-item-3{
+                width: 24%;
+                height: 200px;
+                box-shadow: 10px 5px 10px 5px#888888;
+                padding-top: 35px;
+                float: right;
+            }
+            .section-wu-main-item-1 img, .section-wu-main-item-2 img, .section-wu-main-item-3 img{
+                width: 40%;
+            }
+            .section-boat-main{
+                background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.6)) , url(images/boat-travel.jpg);
+                background-position: center;
+                background-color: black;
+                background-size: cover;
+                height: 500px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .section-boat-main-items{
+                color: white;
+                padding-top: 150px;
+                width: 60%;
+                margin: 10% 20%;
+            }
+            .section-boat-main-items h2, .section-boat-main-items p, .btn{
+                margin-top: 30px;
+                font-weight: 100;
+            }
+            .contact-us-section{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 600px;
+            }
+            .contact-us-header{
+                margin-top: 50px;
+            }
+            .contact-us-header h2{
+               font-size: 20pt;
+               font-weight: 100;
+            }
+            .contact-us-header p{
+                font-size: 10pt;
+            }
+            .contact-us-form{
+                text-align: center;
+                padding: 15px;
+                border-radius: 20px;
+                margin: 50px 15% auto;
+                width: 70%;
+                background: #888888;
+            }
+            .contact-us-form input, textarea{
+                background-color: transparent;
+                width: 90%;
+                border: 1px solid #58E970;
+                border-radius: 20px;
+                padding: 5px;
+                margin: 5px;
+            }
+            .contact-us-form input::placeholder {
+                color: white;
+                padding: 5px;
+            }
+
+            .contact-us-form textarea::placeholder{
+                color: white;
+                padding: 5px;
+            }
+
+            .footer{
+                height: 400px;
+                background: black;
+                text-align:center;
+            }
+
+            .footer-items{
+               padding-top: 80px;
+            }
+
+            .footer-header{
+                padding: 25px;
+                font-size: 20pt;
+            }
+
+            .footer-subscribe{
+                padding-top: 25px;
+                padding: 15px;
+            }
+            .footer input{
+                margin-bottom: 10px;
+                border-radius: 20px;
+                width: 20%;
+                padding: 5px;
+            }
+            .footer input::placeholder{
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--  HEADER START  -->
+        <div class="header">
+            <div class="nav">
+                <div class="left-nav">
+                    <p> R & T </p>
+                </div>
+                <div class="right-nav">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">LISTINGS</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+            <div class="header-items">
+                <h1>RELAX AND TRAVEL</h1>
+                <h2> Best offers here!</h2>
+                <button class="btn-transparent" type="button">Find best offer!</button>
+            </div>
+        </div>
+        <!--  HEADER END  -->
+        <div class="clear-fix"></div>
+        <!-- WHY US SECTION START-->
+        <div class="section-wu">
+            <div class="section-wu-header">
+                <h2>WHY US?</h2>
+                <p>REASON TO SELECT US</p>
+            </div>
+            <div class="section-wu-main">
+                <div class="section-wu-main-item-1">
+                    <img src="images/price-c.png" alt="No image found">
+                    <p>BEST PRICES</p>
+                </div>
+                <div class="section-wu-main-item-2">
+                    <img src="images/map-c.png" alt="No image found">
+                    <p>MANY DESTINATIONS</p>
+                </div>
+                <div class="section-wu-main-item-3">
+                    <img src="images/quality-c.png" alt="No image found">
+                    <p>BEST QUALITY</p>
+                </div>
+            </div>
+            <div class="section-wu-footer">
+                <button class="btn-transparent" type="button">Read More</button>
+            </div>
+        </div>
+        <!-- WHY US SECTION END-->
+        <div class="clear-fix"></div>
+        <!-- BOAT TRAVEL SECTION START-->
+        <div class="section-boat-main">
+            <div class="section-boat-main-items">
+                <h2>BEST BOAT TRAVEL IN THE WORLD</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras pharetra imperdiet odio nec scelerisque. 
+                    Cras eu lorem mauris. Nullam euismod sodales rhoncus. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+                    posuere cubilia curae; Sed vehicula gravida facilisis.
+                </p>
+                <button class="btn-transparent" type="button">Read More</button>
+            </div>
+        </div>
+        <!-- BOAT TRAVEL SECTION END-->
+        <div class="clear-fix"></div>
+        <!-- CONTACT US START-->
+        <div class="contact-us-section">
+            <div class="contact-us-header">
+                <h2> Contact us</h2>
+                <p> If you have any questions, please contact us!</p>
+            </div>
+            <div class="contact-us-form">
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <br>
+                    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    <br>
+                    <button class="btn-green" type="button">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- CONTACT US END-->
+        <div class="clear-fix"></div>
+        <!-- FOOTER START-->
+        <div class="footer">
+            <div class="footer-items">
+                <div class="footer-header">
+                    <h2 style="color: #58E970;"> R & T</h2>
+                    <h2 style="color: white;">WEBSITE 2022</h2>
+                </div>
+                <div class="footer-subscribe">
+                    <input type="text" placeholder="Enter your email">
+                    <br>
+                    <button class="btn-green" type="button">SUBSCRIBE</button>
+                </div>
+             </div>
+        </div>
+        <!--FOOTER END-->
+    </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Front Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container {
+            min-height: 100%;
+            background: url('/images/bridgeForest.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-container-inner {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .header-inner-left {
+            width: 30%;
+            float: left;
+        }
+
+        .header-inner-right {
+            width: 70%;
+            float: right;
+        }
+
+        .pad-15 {
+            padding: 15px;
+        }
+
+        .logo {
+            background: white;
+            text-align: center;
+            display: inline;
+            padding: 0 25px;
+            font-family: impact;
+            font-size: 25px;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin-top: 4px;
+            text-align: right;
+            font-size: 22px;
+        }
+
+        .nav li {
+            display: inline-block;
+            padding-right: 15px;
+        }
+
+        .nav li a {
+            color: white;
+            font-family: 'DotGothic16', sans-serif;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .nav li a:hover {
+            color: gold;
+            opacity: 0.77;
+        }
+
+        .nav li:hover .nav-dropdown {
+            display: block;
+        }
+
+        .nav-dropdown {
+            background-color: rgba(255, 255, 255, 0.7);
+            position: absolute;
+            padding: 14px 7px 7px ;
+            text-align: left;
+            min-width: 100px; 
+            display: none;
+        }
+        
+        .nav-dropdown li {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        .nav-dropdown li a {
+            color: black;
+            font-weight: 300;
+
+        }
+
+        .dropdown-header {
+            color: black;
+            padding-bottom: 7px;
+            border-bottom: 2px solid black;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+
+        .header-text {
+            padding-top: 17%;
+            text-align: center;
+        }
+
+        .header-text h1 {
+            text-transform: uppercase;
+            font-size: 60px;
+            letter-spacing: 11;
+            color: white;
+            margin: 0;
+        }
+
+        .header-text h2 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 11;
+            opacity: 0.7;
+        }
+
+        .header-text button {
+            border: unset;
+            color: white;
+            background: black;
+            padding: 10px 20px;
+        }
+
+        .header-text button:hover {
+            cursor: pointer;
+            color: gold;
+        }
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header-container-inner">
+                <div class="header-inner-left">
+                    <div class="pad-15">
+                        <div class="logo">MY SITE</div>
+                    </div>
+                </div>
+                <div class="header-inner-right">
+                    <div class="pad-15">
+                        <ul class="nav">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                <span>Meow</span>   
+                                </a>
+                                <ul class="nav-dropdown">
+                                    <li class="dropdown-header">
+                                        Categories
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown item one</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown item two</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown item three</a>
+                                    </li>
+                                </ul> 
+                            </li>
+                            <li>
+                                <a href="">Meowow 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>This is header</h1>
+                <h2>This is under header</h2>
+                <div>
+                    <button>CALL TO ACTION</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

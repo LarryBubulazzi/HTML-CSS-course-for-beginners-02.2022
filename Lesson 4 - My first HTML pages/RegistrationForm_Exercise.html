@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Форма</title>
+        <style>
+
+            .left {
+                float: left;
+                width: 50%;
+            }
+
+            .right {
+                float: right;
+                width: 50%;
+            }
+
+            table, tr, td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            .clear-fix {
+                clear: both;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Служител</h1>
+        <form>
+            <div class="left">
+                <table>
+                    <tr>
+                        <td>ИД</td>
+                        <td>
+                            <input type="text" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Име</td>
+                        <td>
+                            <input type="text" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Презиме</td>
+                        <td>
+                            <input type="text" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Фамилия</td>
+                        <td>
+                            <input type="text" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                        <td>
+                            <input type="text" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Факс</td>
+                        <td>
+                            <input type="text" name="" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <table>
+                    <tr>
+                        <td>Работа от</td>
+                        <td>
+                            Вкъщи <input type="radio" name="work">
+                            Офис  <input type="text" name="work">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Град</td>
+                        <td>
+                            <select name="">
+                            <option>София</option>
+                            <option>Пловдив</option>
+                            <option>Русе</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Езици</td>
+                        <td>
+                            Български <input type="checkbox" name="">
+                            френски <input type="checkbox" name="">
+                            Немски <input type="checkbox" name="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Информация</td>
+                    <td>
+                        <textarea name=""></textarea>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Прикачване на файл</td>
+                        <td>
+                            <input type="file" name="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear-fix">
+            </br>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </body>
+</html>
