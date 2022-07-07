@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Guest House Design</title>
+
+        <script src="https://kit.fontawesome.com/2fe747aa87.js" 
+        crossorigin="anonymous"></script>
+
+        <style>
+
+            html, body {
+                margin: 0;
+                padding: 0;
+                background: black;
+            }
+
+            h1, p, li {
+                color: gold;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            h2, h3 {
+                color: antiquewhite;
+            }
+
+            .header-container {
+                margin: 0 auto;
+                height: 200px;
+                background: black;
+            }
+
+            .header-container-inner {
+                margin: 0 auto;
+                width: 100%;
+
+            }
+
+            .header-container-logo {
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .header-container-nav {
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            .header-container-logo img {
+                height: 80px;
+            }
+
+            .nav li {
+                display: inline-block;
+            }
+
+            .nav li a {
+                text-decoration: none;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: gold;
+                padding: 24px;
+                font-size: 24px;
+            }
+
+            .nav li a:hover {
+                color: white;
+            }
+
+            .nav-dropdown {
+                position: absolute;
+                padding: 14px 7px 7px ;
+                text-align: left;
+                min-width: 100px; 
+                display: none;
+            }
+
+            .nav li:hover .nav-dropdown {
+                display: block;
+            }
+
+            .nav-dropdown li {
+                display: block;
+                padding: 10px;
+            }
+
+            .image-container {
+                margin: 0 auto;
+                height: 1200px;
+                background-image: url('images/Villa.jpg');
+                background-size: cover;
+            }
+
+            .image-container-inner {
+                width: 80%;
+                margin: 0 auto;
+                
+                
+            }
+
+            .image-container-header {
+                text-align: center;
+                padding-top: 12%;
+            }
+
+            .image-container-header h1 {
+                font-size: 70px;
+                text-transform: uppercase;
+                border-bottom: 3px solid;
+            }
+
+            .about-us-container {
+                padding-top: 60px;
+                background: black;
+                width: 80%;
+                margin: 0 auto;
+                height: 500px;
+            }
+
+            .about-us-description {
+                width: 35%;
+                float: left;
+                padding-top: 10%;
+                padding-left: 20px;
+            }
+
+            .about-us-description h2 {
+                border-bottom: 1px solid gold;
+                color: antiquewhite;
+                text-align: center;
+                font-size: 30px;
+                font-style: italic;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .about-us-description p {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: large;
+                text-align: justify;
+                color: gold;
+            }
+
+            .about-us-images {
+                padding-left: 40px;
+                padding-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                position: relative;
+            }
+
+            .about-us-img2 {
+                grid-column: 4 / -1;
+                grid-row: 1;
+            }
+
+            .about-us-img1 {
+                grid-row: 1;
+                grid-column: 1 / span 8;
+                padding-top: 20%; 
+                z-index: 1;
+            }
+
+            .about-us-images img {
+                width: 90%;
+                display: block;
+            }
+
+            .rooms-description-container {
+                padding-top: 8%;
+                width: 80%;
+                margin: 0 auto;
+                height: 700px;
+                border-bottom: 1.2px groove gold;
+                
+            }
+
+            .rooms-description-inner {
+                width: 30%;
+                display: inline-block;
+                padding: 20px 20px 20px 0px;
+            }
+
+            .rooms-description-inner h2 {
+                font-size: 30px;
+                font-style: italic;
+                color: antiquewhite;
+            }
+
+            .rooms-description-inner ul li {
+                list-style-type: square;
+                font-size: large;
+            }
+
+            .rooms-description-inner img {
+                width: 100%;
+                height: 360px;
+            }
+
+            .rooms-price {
+                float: right;
+                padding-top: 2%;
+                padding-right:30px;
+            }
+
+            .rooms-price p {
+                border-bottom: 1.4px solid antiquewhite;
+                color: antiquewhite; 
+            }
+
+            .spa-section-container {
+                height: 1250px;
+                padding-top: 12%;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .spa-description {
+                width: 35%;
+                float: left;
+            }
+
+            .spa-description h3 {
+                font-size: 22px;
+            }
+
+            .spa-description p {
+                font-size: large;
+            }
+
+            .spa-images {
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: 1fr 4rem 1fr 5rem 1fr 10rem;
+                margin: 0 auto;
+                max-width: 800px;
+            }
+
+            .spa-images img {
+                object-fit: cover;
+                width: 100%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }       
+
+            .spa-images img:nth-of-type(1) {
+            grid-column: 6/11;
+            grid-row: 1/3;
+            aspect-ratio: 12/9;
+            }
+
+            .spa-images img:nth-of-type(2) {
+            grid-column: 1/8;
+            grid-row: 2/5;
+            aspect-ratio: 13/9;
+            }
+
+            .spa-images img:nth-of-type(3) {
+            grid-column: 5/10;
+            grid-row: 4/7;
+            aspect-ratio: 1;
+            }
+
+            .spa-images img:nth-of-type(4) {
+            grid-column: 2/8;
+            grid-row: 6/9;
+            aspect-ratio: 16/9;
+            }
+
+            .contact-form {
+                padding-top: 5%;
+                width: 100%;
+                margin: 0 auto;
+                background: white;
+                height: 200px;
+                
+            }
+
+            .icon {
+                display:inline-block;
+                width: 33%;
+                text-align: center;
+            }
+
+            .icon img {
+                width: 60%;
+                height: 160px;
+            }
+
+            .icon p {
+                font-size: large;
+                color: black;
+            }
+
+            .icon a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .icon a:hover {
+                color: gold;
+            }
+
+            .footer {
+                height: 80px;
+                text-align: center;
+            }
+
+            .footer p {
+                border: 2px solid antiquewhite;
+                color: black;
+            }
+
+            .footer-inner {
+                width: 20%;
+                margin: 0px auto;
+                background: antiquewhite;
+                margin-top: 50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header-container-inner">
+                <div class="header-container-logo">
+                    <img src="/images/HouseLogo.png" alt="">
+                </div>
+                <div class="header-container-nav">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Начало</a>
+                        </li>
+                        <li>
+                            <a href="">За Къщата</a>
+                        </li>
+                        <li>
+                            <a href="">Настаняване</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Цени</span>   
+                                </a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="">Единична стая</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Двойна стая</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Цялата къща</a>
+                                    </li>
+                                </ul> 
+                        </li>
+                        <li>
+                            <a href="">Галерия</a>
+                        </li>
+                        <li>
+                            <a href="">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="image-container-inner">
+                <div class="image-container-header">
+                    <h1>Къща за гости Дизайн</h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="about-us-description">
+                <h2>За нас</h2>
+                <p>Къща за гости Дизайн се 
+                намира в Николово, област Русе, и предлага балкон и изглед към 
+                градината. Климатизираното помещение за настаняване е на 12 км от 
+                Русе и има частен паркинг на място и безплатен WiFi. Ваканционната 
+                къща е с вътрешен двор и изглед към язовира. Разполага с 5 спални, 
+                всекидневна, телевизор с плосък екран и оборудвана кухня със 
+                съдомиялна машина и микровълнова печка. Децата могат да си играят на детската площадка. След ден прекаран 
+                в пешеходен туризъм и колоездене, гостите могат да релаксират 
+                в градината или общия салон.</p>
+
+            </div>
+            <div class="about-us-images">
+                <div class="about-us-img1">
+                    <img src="images/view.jpg" alt="">
+                </div>
+                <div class="about-us-img2">
+                    <img src="images/riverSunset.jpg" alt="">
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="rooms-description-container">
+            <div class="rooms-description-inner">
+                <img src="images/Single Room.jpg" alt="">
+                <h2>Двойна стая</h2>
+                <ul>
+                    <li>Спалня или две отделни легла</li>
+                    <li>Самостоятелна баня с душ</li>
+                    <li>Климатик</li>
+                    <li>Телевизор</li>
+                    <li>Минибар</li>
+                    <li>Тераса</li>
+                </ul>
+                <div class="rooms-price">
+                    <p>69.99 лв</p>
+                </div>
+            </div>
+            <div class="rooms-description-inner">
+                <img src="images/Triple Room.jpg" alt="">
+                <h2>Тройна стая</h2>
+                <ul>
+                    <li>Спалня и две отделни легла</li>
+                    <li>Самостоятелна баня с душ</li>
+                    <li>Климатик</li>
+                    <li>Телевизор</li>
+                    <li>Минибар</li>
+                    <li>Тераса</li>
+                </ul>
+                <div class="rooms-price">
+                    <p>99.99лв</p>
+                </div>
+            </div>
+            <div class="rooms-description-inner">
+                <img src="images/Suiteee.jpg" alt="">
+                <h2>Суит</h2>
+                <ul>
+                    <li>Две отделни стаи със спалня във всяка</li>
+                    <li>Самостоятелна баня с душ и вана</li>
+                    <li>Климатик</li>
+                    <li>Телевизор</li>
+                    <li>Минибар</li>
+                    <li>Тераса</li>
+                </ul>
+                <div class="rooms-price">
+                    <p>129.99лв</p>
+                </div>
+            </div>
+        </div>
+        <div class="spa-section-container">
+            <div class="spa-description">
+                <h2>Спа център</h2>
+                <p>Къща за гости Дизайн разполага и със собствен спа център,
+                    който предлага различни спа процедури.
+                </p>
+                <br>
+                <br>
+                <h3>Отпускащ хидромасаж</h3>
+                <p>Горещата вода в съчетание с приятен масаж разтоварва 
+                    мускулатурата на тялото и същевременно носи усещане за 
+                    спокойствие и наслада. Именно това е причината да ви 
+                    препоръчваме да използвате редовно джакузи за 
+                    срещу стрес и напрежение. Спа центърът разполага с 
+                    10-местно джакузи. 6 места са седящи и са предназначени 
+                    за воден масаж на гръб, а 4 са лежанки за перлен масаж. 
+                    За да повлияе благотворно на кожата и на нервната система, 
+                    температурата на водата е 36 градуса.</p>
+                    <br>
+                <h3>Терапия за жизненост и блясък на кожата</h3>
+                <p>Едни от най-добрите и иновативни терапии за постигане 
+                    на копринена мекота и сияен вид на кожата са разработени 
+                    чрез метода на Biologique Recherche. Използването на 
+                    естествени продукти без добавени аромати ги прави напълно 
+                    безопасни за кожата, особено през зимата, когато е 
+                    най-чувствителна. Прилагането на козметичните процедури 
+                    винаги се предхожда от персонална диагностика на кожата, 
+                    подходяща едновременно за мъже и жени. За да сте сигурни, 
+                    че сте избрали най-добрата за вас процедура, предварително
+                    се консултирайте с нашите специалисти в спа центъра.</p>
+                    <br>
+                <h3>ВИП ритуал за двама</h3>
+                <p>Какво по-подходящо от посещение на любимия спа център в 
+                    студен снежен ден. Не се колебайте да поканите и вашата 
+                    половинка и заедно да се насладите на селекция от отпускащи 
+                    и освежаващи процедури в изисканата обстановка на спа комплекса.
+                    За пълно усамотение и хармонична атмосфера, можете да изберете
+                    романтичен ритуал в уникалния ВИП апартамент ONYX, който 
+                    разполага със самостоятелен хамам, спалня, джакузи, масажни
+                    легла и допълнителни екстри, така че да се чувствате 
+                    максимално комфортно. Спа центърът разполага още 
+                    с ВИП масажна стая, където да споделяте незабравими емоции 
+                    с любимия човек под звуците на нежна и релаксираща музика. 
+                    А най-хубавото е, че процедурите са специално съобразени с 
+                    нуждите на мъжкото и женското тяло.</p>
+                    <br>
+                    
+            </div>
+            <div class="spa-images">
+                <img src="images/spa1.jpg" alt="">
+                <img src="images/spa2.jpg" alt="">
+                <img src="images/spa3.jpg" alt="">
+                <img src="images/spa4.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="icon">
+                <i class="fa-solid fa-square-phone fa-5x"></i>
+                <p>Телефон за връзка:</p>
+                <a href="tel:+35998765432">+359987654321</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-location-dot fa-5x"></i>
+                <p>Локация</p>
+                    <a href="Lozenets Str. 99 7057 Nikolovo, Ruse, Bulgaria">Lozenets Str. 99 7057 Nikolovo, Ruse Bulgaria</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-at fa-5x"></i>
+                <p>Email</p>
+                <address>
+                <a href="mailto:guesthousedesign@gmail.com">guesthousedesign@gmail.com</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-inner">
+                <p>VilaDesign © 2022 | Web Design by IzzyStudio</p>
+            </div>
+        </div>
+    </body>
+</html>
