@@ -1,0 +1,60 @@
+<head>
+    <title>JS Examples</title>
+    <style>
+        .grid > div {
+            background: lightblue;
+            width: 50%;
+            float: left;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+
+        .row >div {
+            background: lightblue;
+            width: 100%;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Направете базов калкулатор: Имаме две поленца, в които можем да
+        въвеждаме някакви числа и 4 бутона: бутон за събиране, 
+        изваждане, деление и умножение. При натискането на някой от
+        бутоните се извържва операцията и показва резултата под 
+        калкулатора.
+    -->
+
+        <div>Result: <span id="result"></span></div>
+    <div>
+        Num: <input type="number" id="num"/> <br/>
+        NumTwo: <input type="number" id="numTwo"> <br/>
+        <button onclick="plus()">+</button> <button onclick="substract()">-</button> <button onclick="multiply()">*</button> <button onclick="divide()">/</button>
+    </div>
+    <script>
+        function plus() {
+            document.getElementById('result').innerHTML = 
+            parseInt(document.getElementById('num').value) +
+            parseInt(document.getElementById('numTwo').value); 
+        }
+        function divide() {
+            document.getElementById('result').innerHTML = 
+            parseInt(document.getElementById('num').value) /
+            parseInt(document.getElementById('numTwo').value); 
+        }
+        function substract() {
+            document.getElementById('result').innerHTML = 
+            parseInt(document.getElementById('num').value) -
+            parseInt(document.getElementById('numTwo').value); 
+        }
+        function multiply() {
+            document.getElementById('result').innerHTML = 
+            parseInt(document.getElementById('num').value) *
+            parseInt(document.getElementById('numTwo').value); 
+        }
+    </script>
+
+   
+</body>
+</html>

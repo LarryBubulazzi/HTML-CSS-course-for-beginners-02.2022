@@ -1,0 +1,50 @@
+<head>
+    <title>JS Examples</title>
+    <style>
+        .grid > div {
+            background: lightblue;
+            width: 50%;
+            float: left;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+
+        .row >div {
+            background: lightblue;
+            width: 100%;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Създайте div с четити вложени div-a. 
+        При натискане на бутон 1 дивовете се подреждат един до друг.
+        При натискане на бутон 2 дивовете застават 1 под друг!
+    -->
+
+    <div style="margin-bottom: 15px;">
+        <button onclick="grid()">Grid</button>
+        <button onclick="row()">Row</button>
+    </div>
+
+    <div class="grid" id="view">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <script>
+        function grid() {
+            document.getElementById('view').className = 'grid';
+        }
+
+        function row() {
+            document.getElementById('view').className = 'row';
+        }
+    </script>
+
+   
+</body>
+</html>

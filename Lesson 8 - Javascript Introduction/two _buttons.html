@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JS Examples</title>
+        <style>
+            .hide {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Създайте  два бутона. При натискане на бутон едно 
+            на елемента се добавя клас .hide и скрива елемента.
+            При натискане на буотон две елемента се показва 
+            отново!
+            className
+        -->
+        <div id="text">
+            Hello from <span id="word">Mishi</span>!
+        </div>
+        <button onclick="hide()">Hide</button>
+        <button onclick="show()">Show</button>
+        <script>
+            function hide() {
+                document.getElementById('text').className = 'hide';
+            }
+            function show() {
+                document.getElementById('text').className ='';
+            }
+        </script>
+    </body>
+</html>

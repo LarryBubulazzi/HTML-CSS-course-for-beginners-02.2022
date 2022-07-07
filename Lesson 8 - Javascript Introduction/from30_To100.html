@@ -1,0 +1,28 @@
+<head>
+    <title>JS Example</title>
+</head>
+<style>
+
+</style>
+<body>
+    <!-- 
+        Създайте<html>
+div с рамери 30%. При натискане на бутон едно
+        дължината му трябва да заеме 100%. 
+        При натискане на бутон две дължината трябва да стане 
+        отново 30%!
+    -->
+
+    <div id="box" style="width: 30%; height: 50px; background: lightblue;"></div>
+    <button onclick="set100PercentWidth()">100% Width</button>
+    <button onclick="set30PercentWidth ()">30% Width</button>
+    <script>
+        function set30PercentWidth() {
+            document.getElementById('box').style.width = '30%';
+        }
+        function set100PercentWidth() {
+            document.getElementById('box').style.width = '100%';
+        }
+    </script>
+</body>
+</html>

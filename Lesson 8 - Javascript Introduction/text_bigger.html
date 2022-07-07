@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>JS Examples</title>
+    </head>
+    <body>
+        <!-- 
+            Създайте бутон и текст.
+            След като бутона бъде натиснат текста трябва да си 
+            промени големината и цвета!
+        -->
+        <div id="text">
+            Hello from Mishi!
+        </div>
+        <div>123123</div>
+        <div>123123</div>
+        <button onclick="makeTextBigger()">Press me!</button>
+        <script>
+            function makeTextBigger() {
+                document.getElementById('text').style.fontSize = '75px';
+                document.getElementById('text').style.color = 'green';
+            }
+        </script>
+    </body>
+</html>

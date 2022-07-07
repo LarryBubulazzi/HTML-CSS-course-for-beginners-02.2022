@@ -1,0 +1,23 @@
+<head>
+    <title>JS Examples</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- 
+       Направете текстово поле, което при въвеждане на текст 
+       показва текства в <div>!
+        innerHTML
+    -->
+
+    <input type="text" id="inputField" oninput="transferText()">
+    <div id="text"></div>
+    <script>
+        function transferText() {
+            document.getElementById('text').innerHTML = document.getElementById('inputField').value;
+        }
+        
+    </script>
+</body>
+</html>
