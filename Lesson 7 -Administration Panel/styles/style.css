@@ -1,0 +1,266 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/*NAVIGATION*/
+.nav {
+    background: white;
+    width: 240px;
+    min-height: 100%;
+    position: fixed;
+    box-shadow: 1px 0px 0 0px rgba(170, 170, 170, 0.7);
+}
+
+.nav .logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-top: 15px;
+}
+
+.nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.nav ul li .active {
+    color: #85d962;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.nav ul li a span {
+    margin-left: 10px;
+    color: rgba(0,0,0,0.5);
+    vertical-align: middle;
+}
+
+.nav ul .menu-title {
+    color: #53ab04;
+    font-weight: 700;
+}
+
+.nav ul li .menu-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+/*NAVIGATION END*/
+
+.main-container {
+    background: #eff1f7;
+    min-height: 1100px;
+    padding-left: 240px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*HEADER BAR*/
+
+.header-bar {
+    background: white;
+    height: 120px;
+}
+
+.header-bar-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.search-bar {
+    background: #f5f7fd;
+    padding: 15px;
+    display: inline-block;
+    margin: 35px 0px 0px 15px;
+    border-radius: 20px;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top:-5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    background: unset;
+    border: unset;
+    width: 240px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.header-bar-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.container {
+    float: right;
+}
+
+.box {
+    float: left;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.box img {
+    width: 30px;
+}
+
+.last-box {
+    float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.last-box img {
+    width: 60px;
+}
+/*HEADER BAR END*/
+
+/*DASHBOARD STATS*/
+.dashboard-stats-inner-container {
+    width: 25%;
+    float: left;
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+.dashboard-stats-item {
+    min-height: 150px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+.ds-left {
+    float: left;
+    width: 40%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.ds-left img {
+    width: 100%;
+}
+
+.ds-right {
+    float: right;
+    width: 60%;
+}
+
+.ds-right h3 {
+    font-size: 40px;
+    margin-top: 30px;
+    color: #2e4765;
+}
+
+.ds-right h4 {
+   color: rgba(170, 170, 170, 0.7);
+}
+/*DASHBOARD STATS END*/
+
+/*COMPANY INCOME*/
+.company-income-container{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.company-income-container h2 {
+    border-bottom: 1px solid rgb(237, 237, 237);
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color:#2e4765;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.income-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.income-table td {
+    text-align: center;
+}
+
+.income-table h3 {
+    color: #2e4765;
+    font-size: 40px;
+}
+
+.income-table span {
+    color: rgba(170, 170, 170, 0.7);
+}
+/*COMPANY INCOME END*/
+
+/*RECENT ACTIVITY*/
+
+.ra-box {
+    width: 50%;
+    float: left;
+}
+
+.ra-box-inner {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.ra-box-inner h2 {
+    color:#2e4765;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.ra-box-inner ul li{
+    color: #53ab04;
+    font-size: 24px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.last-online {
+    color:#2e4765;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+}
+
+.notification {
+    display: block;
+    color:rgba(170, 170, 170, 0.7);
+    margin-top: 9px;
+    font-size: 16px;
+}
+
+/*RECENT ACTIVITY END*/
