@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Front Page</title>
+
+        <style>
+
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+
+            .header-container {
+                margin: 0 auto;
+                height: 720px;
+                background-image: url('images/lake.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .header-container-inner {
+                margin: 0 auto;
+                width: 95%;
+            }
+            
+            .header-inner-left {
+                float: left;
+            }
+
+            .logo {
+                color:  #58E970;  
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+
+            .header-inner-right {
+                float: right;
+            }
+
+            .pad {
+                padding: 10px;
+            }
+
+            .nav li {
+                display: inline-block;
+                padding-right: 20px;
+            }
+
+            .nav li a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                padding: 6px;
+            }
+
+            .header-text {
+                text-align: center;
+                padding-top: 14%;
+            }
+
+            .header-text h1 {
+                color: white;
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 52px;
+                               
+            }
+
+            .header-text h2 {
+                color: #58E970;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+            }
+
+            .header-text button {
+                margin-top: -10px; 
+                width: 170px;
+                height: 56px;
+                background-color: transparent;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #58E970;
+                border: 2px solid #58E970;
+        
+
+            }
+
+            .header-text button:hover {
+                color: white;
+                cursor: pointer;
+            }
+
+            .why-us-container {
+                margin: 0 auto;
+                height: 630px;
+            }
+
+            .header-text-why-us {
+                text-align: center;
+                padding-top: 3%;
+            }
+
+            .header-text-why-us h1 {
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                font-size: 42px;
+            }
+
+            .header-text-why-us h2 {
+                text-transform: uppercase;
+                color: #58E970;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                font-size: 16px;
+            }
+
+            .why-us-images {
+                width: 82%;
+                padding-top: 25px;
+            }
+
+            .inner-image {
+                display: inline;
+                float: right;
+                
+                                   
+            }
+
+            .inner-image img {
+                margin: 10px 10px 10px 10px;
+                border: 1px solid;
+                padding: 10px;
+                box-shadow: 4px 4px 6px 6px #888888;
+               
+            }
+
+            .button-why-us {
+                text-align: center;
+                padding-top: 18%;
+                
+            }
+
+            .button-why-us button {
+                width: 170px;
+                height: 56px;
+                border-color: #58E970;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #58E970;
+                background-color: transparent;
+                background-repeat:no-repeat;
+                border: 2px solid #58E970;  
+            }
+
+            .button-why-us button:hover {
+                color: black;
+                cursor: pointer;
+            }
+
+            .best-boat-container {
+                margin: 0 auto;
+                height: 600px;
+                background-image:linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.6)) , url(images/boat.jpg);
+                background-size: cover;
+                background-position: center;
+                 
+            }
+
+            .best-boat-header {
+                text-align: center;
+                padding-top: 12%;
+            }
+
+            .best-boat-header h1 {
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 42px;
+                font-weight: lighter;
+                color: white;
+            }
+
+            .best-boat-p {
+                width: 55%;
+                padding-left: 360px;
+                font-size: 16px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+
+            .button-best-boat {
+                text-align: center;
+                
+            }
+
+            .button-best-boat button {
+                background-color: rgba(255, 255, 255, 0.884);
+                width: 170px;
+                height: 56px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #58E970;
+                background-color: transparent;
+                background-repeat:no-repeat;
+                border: 2px solid #58E970;
+            }
+
+            .button-best-boat button:hover {
+                color: white;
+                cursor: pointer;
+            }
+
+            .contact-us-container {
+                height: 740px;
+                text-align: center;
+            }
+
+            .contact-us-header {
+                padding-top: 5%;
+            }
+
+            .contact-us-header h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 42px;
+            }
+
+            .contact-us-header p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+
+            .table-form {
+                width: 100%;
+            }
+
+            .contact-us-reg-form {
+                width: 60%;
+                margin-top: 80px;
+                background: #888888;
+                padding: 30px;
+                border-radius: 15px;
+                margin-left: 18%;
+            }
+
+            .contact-us {
+                width: 100%;
+                height: 40px;
+                background: #888888;
+                color: white;
+                margin-bottom: 15px;
+                border: 2px solid #58E970;
+                border-radius: 20px;
+            }
+
+            .contact-us::placeholder {
+                color: white;
+                padding-top: 15px;
+                padding-left: 10px;
+                font-size: 15px;
+            }
+
+            .table-form textarea {
+                width: 100%;
+                background: #888888;
+                border-radius: 15px;
+                border: 2px solid #58E970;
+            }
+
+            .table-form textarea::placeholder {
+                color: white;
+                padding-top: 15px;
+                padding-left: 10px;
+                font-size: 15px;
+            }
+
+            .contact-us-button {
+                margin-top: 20px;
+            }
+
+            .contact-us-button button {
+                width: 170px;
+                color: white;
+                font-size: 16px;
+                padding: 15px 0px;
+                background: #58E970;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+
+            }
+
+            .contact-us-button button:hover {
+                color: black;
+            }
+
+            .footer-container {
+                margin: 0 auto;
+                background: black;
+                height: 500px;
+            }
+
+            .footer-inner {
+                text-align: center;
+                padding-top: 4%;
+            }
+
+
+
+            .footer-subscribe {
+                text-align: center;
+                padding-top: 3%;
+            }
+
+            .footer-button {
+                text-align: center;
+                padding-top: 1%;
+            }
+
+            .footer-header-1 h1 {
+                color: #58E970;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                font-size: 42px;
+            }
+
+            .footer-header-2 {
+                color: white;
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+
+
+            .footer-subscribe input {
+                width: 500px;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+            }
+
+            .footer-subscribe input::placeholder {
+                padding-left: 10px;
+            }
+
+            .footer-button {
+                padding-top: 20px;
+            }
+
+            .footer-button button {
+                width: 200px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 16px;
+                padding: 12px 0px;
+                background: #58E970;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .footer-button button:hover {
+                color: black;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header-container-inner">
+                <div class="header-inner-left">
+                    <div class="pad">
+                        <div class="logo">R & T</div>
+                    </div>
+                </div>
+                <div class="header-inner-right">
+                    <div class="pad">
+                        <ul class="nav">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Listings</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>Relax and travel</h1>
+                <h2>Best offers here!</h2>
+                <div>
+                    <button>Find best offer!</button>
+                </div>
+            </div>
+        </div>
+        <div class="why-us-container">
+            <div class="header-text-why-us">
+                <h1>Why us?</h1>
+                <h2>Reason to select us!</h2>
+            </div>
+            <div class="why-us-images">
+                <div class="inner-image">
+                    <img src="images/bestqulity2.png" alt="">
+                </div>
+                <div class="inner-image">
+                    <img src="images/Destinations.png" alt="">
+                </div>
+                <div class="inner-image">
+                    <img src="images/BestPrices.png" alt="">
+                </div>
+                
+                    
+            </div>
+            <div class="button-why-us">
+                <button>Read More</button>
+            </div>
+       </div>
+       <div class="best-boat-container">
+           <div class="best-boat-inner">
+                <div class="best-boat-header">
+                <h1>Best boat travel in world</h1>
+                    <div class="best-boat-p">
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and 
+                        scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-best-boat">
+                <button>Read More</button>
+            </div>
+       </div>
+       <div class="contact-us-container">
+           <div class="contact-us-header">
+               <h1> Contact us</h1>
+               <p>If you have any questions please contact us!</p>
+           </div>
+           <div class="contact-us-reg-form">
+            <form>
+                <table class="table-form">
+                    <tr>
+                        <td>
+                            <input class="contact-us" type="text" placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="contact-us" type="text" placeholder="Phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="contact-us" type="text" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea placeholder="Message" name="" id="msg" rows="5"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="contact-us-button">
+                    <button>SEND</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-inner">
+                <div class="footer-header-1"> 
+                    <h1>R & T</h1>
+                </div>
+                <div class="footer-header-2">
+                    <h1>Website 2022</h1>
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="footer-button">
+                <button>Subscribe</button>
+            </div>
+        </div>
+          
+    </body>
+</html>
