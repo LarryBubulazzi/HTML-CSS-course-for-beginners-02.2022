@@ -1,0 +1,199 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, h6, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 75px;
+    width: 100%;
+    background: skyblue;
+    position: fixed;
+    top: 0;
+}
+
+.h-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.logo {
+    width: 80%;
+    height: 100%;
+    background: url(../images/logo_real_estate.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.h-right {
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: right;
+}
+
+.h-right button {
+    font-size: 40px;
+    border: unset;
+    background: unset;
+    margin-top: 14px;
+    color: white;
+    margin-right: 12px;
+}
+
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+}
+
+.nav a {
+    display: block;
+    background-color:skyblue;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+
+.nav a i {
+    float: right;
+}
+
+.top-section {
+    background: url('../images/header_img.jpg');
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 75px;
+}
+
+.top-section h2 {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 40px;
+    margin-top: 30px;
+    
+}
+
+.top-section button, #order-form button {
+    background-color: skyblue;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.estate-list {
+    padding: 20px;
+    background: skyblue;
+}
+
+.estate-list h2 {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.estate-offer-box {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.estate-offer-box img {
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.estate-offer-box h5 {
+    margin-top: 8px;
+}
+
+
+.estate-offer-box .price {
+    color: white;
+    font-weight: bold;
+}
+
+.about-us {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.about-us h1 {
+    border-bottom: 1px dotted;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.about-us-description {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(83, 82, 82);
+}
+
+.broker-header {
+    padding-top: 100px;
+}
+
+.brokers-section {
+    padding-top: 10%;
+    padding-left: 15px;
+}
+
+.broker-description {
+    width: 49%;
+    display: inline-block;
+}
+
+.broker-description img {
+    width: 150px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.broker-description p {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+
+
+
+
+
+

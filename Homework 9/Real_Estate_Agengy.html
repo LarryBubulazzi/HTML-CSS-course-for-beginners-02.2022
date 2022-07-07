@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Real Estate 'Design'</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/Real_Estate_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="h-left">
+                <div class="logo"></div>
+            </div>
+            <div class="h-right">
+                <button onclick="toggle()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="nav" id="nav">
+                <a href="">
+                    <span>Начало</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <a href="">
+                    <span>Имоти</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <a href="">
+                    <span>За нас</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <a href="">
+                    <span>Контакти</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="top-section">
+            <h2>Недвижима агенция "Дизайн"</h2>
+            <button>Разгледай всички имоти</button>
+        </div>
+        <div class="estate-list">
+            <h2>Имоти</h2>
+            <div class="estate-offer-box">
+                <img src="/images/house_1.jpg" alt="">
+                <h5>Двуетажна къща, 230 кв. м, двор</h5>
+                <div class="location-estate"> Русе</div>
+                <div class="price">150 000 EUR</div>
+            </div>
+            <div class="estate-offer-box">
+                <img src="/images/house_2.jpg" alt="">
+                <h5>Имение, 300 кв.м, басейн</h5>
+                <div class="location-estate"> област Велико Търново</div>
+                <div class="price">200 000 EUR</div>
+            </div>
+            <div class="estate-offer-box">
+                <img src="/images/house_3.jpg" alt="">
+                <h5>Двуетажна къща с таванско помещение и гараж, 200 кв. м</h5>
+                <div class="location-estate"> Пловдив</div>
+                <div class="price">120 000 EUR</div>
+            </div>
+            <div class="estate-offer-box">
+                <img src="/images/house_4.jpg" alt="">
+                <h5>Двуетажна къща 300 кв. м, басейн </h5>
+                <div class="location-estate"> Русе</div>
+                <div class="price">210 000 EUR</div>
+            </div>
+            <div class="estate-offer-box">
+                <img src="/images/house_5.jpg" alt="">
+                <h5>Двуетажна къща, 240 кв. м, два гаража и двор</h5>
+                <div class="location-estate">Варна</div>
+                <div class="price">175 000 EUR</div>
+            </div>
+            <div class="about-us">
+                <h1>За Нас</h1>
+            </div>
+            <div class="about-us-description">
+                <p>Агенция за недвижими имоти "Дизайн" е създадена и основана от 
+                Минчо и Минка Празникови през далечната 1977г. Оттогава досега 
+                фирмата има хиляди успешни сделки на прекрасни имоти в и извън 
+                България!</p>
+            </div>
+            <div class="broker-header">
+                <h2>Запознайте се с някои от нашите най-успешни брокери!</h2>
+            </div>
+            <div class="brokers-section">
+                    <div class="broker-description">
+                        <img src="/images/broker_1.jpg" alt="">
+                        <p style="color: black; text-shadow: none;">Григор Козарев</p>
+                        <p>тел: 0898838345</p>
+                        <p>email: grigithegoat@gmail.com</p>
+                    </div>
+                    <div class="broker-description">
+                            <img src="/images/broker_2.jpg" alt="">
+                            <p style="color: black; text-shadow: none;">Велислава Георгиева</p>
+                            <p>тел: 0898846340</p>
+                            <p>email: kakaVeli@gmail.com</p>
+                    </div>
+            </div>
+            <div class="brokers-section">
+                <div class="broker-description">
+                    <img src="/images/broker_3.jpg" alt="">
+                    <p style="color: black; text-shadow: none;">Маринчо Шишков</p>
+                    <p>тел: 0898838651</p>
+                    <p>email: marinChubby@gmail.com</p>
+                </div>
+                <div class="broker-description">
+                        <img src="/images/broker_4.jpg" alt="">
+                        <p style="color: black; text-shadow: none;">Минчо Празников</p>
+                        <p>тел: 0898846340</p>
+                        <p>email: theboss@gmail.com</p>
+                </div>
+        </div>
+        <script>
+            function toggle() {
+                var nav = document.getElementById('nav');
+                if(nav.style.display == 'block')
+                {
+                    nav.style.display = 'none';
+                }
+                else
+                {
+                    nav.style.display = 'block';
+                }
+            }
+        </script>
+    </body>
+</html>
